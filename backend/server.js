@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/spirex_mart';
-const JWT_SECRET = process.env.JWT_SECRET || 'spirex_secret_key_12345';
+const MONGO_URI = process.env.MONGO_URI;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // MongoDB Connection
 mongoose.connect(MONGO_URI)
